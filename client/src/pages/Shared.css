@@ -1,0 +1,39 @@
+.donation-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.donation-icon {
+  font-size: 40px;
+  flex-shrink: 0;
+}
+
+.donation-main {
+  flex: 1;
+}
+
+.donation-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.donation-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.donation-status-icon {
+  font-size: 28px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 600px) {
+  .donation-row { flex-direction: column; }
+  .donation-actions { flex-direction: row; }
+}
